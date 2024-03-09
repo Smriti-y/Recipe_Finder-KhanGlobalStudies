@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <div id="filters">
+            <label for="cuisine">Cuisine:</label>
+            <select id="cuisine">
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                
+            </select>
+
+            <label for="diet">Dietary Restrictions:</label>
+            <select id="diet">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+             
+            </select>
+
+            <label for="mealType">Meal Type:</label>
+            <select id="mealType">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                
+            </select>
+            <button id="filterBtn">Filter</button>
+        </div>
+    </header>
+
+    <div class="search">
+        <input type="text" id="txtSearch" placeholder="Enter ingredient">
+        <button class="btn" id="btnFind">Find Recipes</button>
+    </div>
+
+    <div id="loading" class="hide"></div>
+
+    <div id="recipe-container"></div>
+
+    <div id="favorites-container">
+        <h2>Favorites</h2>
+        <div id="favorites-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+      
